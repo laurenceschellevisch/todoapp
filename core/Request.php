@@ -9,6 +9,10 @@ class Request
         );
     }
 
+    public static function controller() {
+
+    }
+
     public static function method()
     {
         return $_SERVER['REQUEST_METHOD'];

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SB Admin - Start Bootstrap Template</title>
-    <?php require('partials/load.php'); ?>
+    <title>ToDo Login</title>
+    <?php require('views/partials/load.php'); ?>
 </head>
 
 <body class="bg-dark">
@@ -45,16 +45,16 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="login.html">Register</a>
+                <a class="btn btn-primary btn-block" href="login.view.php">Register</a>
             </form>
             <div class="text-center">
-                <a class="d-block small mt-3" href="login.html">Login Page</a>
+                <a class="d-block small mt-3" href="login.view.php">Login Page</a>
                 <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
             </div>
         </div>
     </div>
 </div>
-<?php require('partials/loadjs.php'); ?>
+<?php require('views/partials/loadjs.php'); ?>
 </body>
 
 </html>
