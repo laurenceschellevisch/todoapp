@@ -29,6 +29,7 @@ class Router
     public function direct($uri, $requestType)
     {
         if (array_key_exists($uri, $this->routes[$requestType])) {
+            print_r($this->routes);
             return $this->routes[$requestType][$uri];
         }
 
