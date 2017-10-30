@@ -189,7 +189,7 @@ body.sidenav-toggled #mainNav.fixed-top #sidenavToggler i {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   transform: scaleX(-1);
-  filter: FlipH;
+  filter: ;
   -ms-filter: 'FlipH'; }
 
 #mainNav.static-top .sidenav-toggler {
@@ -204,7 +204,7 @@ body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   transform: scaleX(-1);
-  filter: FlipH;
+  filter: ;
   -ms-filter: 'FlipH'; }
 
 .content-wrapper {
@@ -344,4 +344,6 @@ footer.sticky-footer {
 
 @media (min-width: 992px) {
   body.sidenav-toggled footer.sticky-footer {
-    width: calc(100% - 55px); } }
+    width: calc(100% - 55px); }
+}
+  }

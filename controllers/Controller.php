@@ -8,14 +8,9 @@
 
 class Controller
 {
-    public $task;
-    public $config = [];
 
     public function __construct()
     {
-        $this->config['config'] = require 'config.php';
-        $this->task = new  Task(
-            Connection::make($this->config['config']['database'])
-        );
+
     }
 }
