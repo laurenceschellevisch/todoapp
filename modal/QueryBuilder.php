@@ -26,6 +26,7 @@ class QueryBuilder
             implode(', ', array_keys($parameters)),
             ':' . implode(', :', array_keys($parameters))
         );
+        echo $sql; print_r($parameters); die();
 
         try {
             $statement = $this->pdo->prepare($sql);

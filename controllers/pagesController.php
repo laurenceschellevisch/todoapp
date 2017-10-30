@@ -6,16 +6,19 @@
  * Time: 16:03
  */
 
-
-class pagesController
+class pagesController extends Controller
 {
-    public function home() {
-
+    public function index() {
         require 'views/index.view.php';
     }
-
     public function register() {
         require 'views/login/register.view.php';
-
     }
+    public function login() {
+        require 'views/login/login.view.php';
+    }
+    public function home() {
+        require 'views/home/home.view.php';
+    }
+
 }
