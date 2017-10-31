@@ -5,5 +5,5 @@
     <meta charset="UTF-8">
     <title>ToDo OOP</title>
 </head>
-<body>
+
     <?php require('nav.php'); ?>

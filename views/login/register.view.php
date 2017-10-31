@@ -19,37 +19,34 @@
             <form>
                 <div class="form-group">
                     <div class="form-row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <label for="exampleInputName">First name</label>
-                            <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Enter first name">
+                            <input required class="form-control" name="name" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Enter first name">
                         </div>
-                        <div class="col-md-6">
-                            <label for="exampleInputLastName">Last name</label>
-                            <input class="form-control" id="exampleInputLastName" type="text" aria-describedby="nameHelp" placeholder="Enter last name">
-                        </div>
+
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input required class="form-control" name="email" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
                             <label for="exampleInputPassword1">Password</label>
-                            <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+                            <input required class="form-control" name="pass" id="exampleInputPassword1" type="password" placeholder="Password">
                         </div>
                         <div class="col-md-6">
                             <label for="exampleConfirmPassword">Confirm password</label>
-                            <input class="form-control" id="exampleConfirmPassword" type="password" placeholder="Confirm password">
+                            <input required class="form-control" name="pass2nd" id="exampleConfirmPassword" type="password" placeholder="Confirm password">
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="login.view.php">Register</a>
+                <a class="btn btn-primary btn-block" href="/register/complete">Register</a>
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="login.view.php">Login Page</a>
-                <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+                <a class="d-block small" href="forgot-password.html">Forgot Password? doesnt work yet</a>
             </div>
         </div>
     </div>

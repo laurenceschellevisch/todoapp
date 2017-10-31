@@ -1,4 +1,7 @@
 <?php
 
-$router->get('', 'controllers/index.php');
-$router->get('register', 'controllers/user.php');
+$router->get('', 'pagesController@index');
+$router->get('register', 'pagesController@register');
+$router->get('home', 'pagesController@home');
+$router->get('login', 'pagesController@login');
+$router->post('loginaccount', 'userController@logincheck');
