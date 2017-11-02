@@ -34,9 +34,6 @@ class Router
     {
 
         //this directs you to the correct uri. well it prepares you to go to the correct uri
-
-
-
         if ($this->routes[$requestType][$uri]) {
             //checks if it exists in array
             return $this->callAction(
@@ -44,8 +41,9 @@ class Router
                 ...explode('@',$this->routes[$requestType][$uri])
             );
         }
-        throw new Exception('No route defined for this URI.');
     }
+
+
 
     protected function  callAction($controller, $action) {
 
