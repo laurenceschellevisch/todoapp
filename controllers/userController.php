@@ -10,14 +10,25 @@ class userController extends Controller
 {
     public function logincheck() {
 
-
-        if (App::get('taskdb')->checkLoginDetail()){
+//cheacks if you get back true if not redirect
+        if (App::get('userdb')->checkLoginDetail() === true){
 
             header('location: /home');
-        } else if (App::get('taskdb')->checkLoginDetail() === false) {
+        } else if (App::get('userdb')->checkLoginDetail() === false) {
             echo 'oops something went wrong';
-            header('location: /login');
+            header('location: /');
         }
-
+    }
+    public function logout() {
+        App::get('userdb')->logout();
+    }
+    public function registerAccount() {
+        //same here checks if you get back true redirect
+        if (App::get('userdb')->registerAccount() === true) {
+            header('location:/');
+        } else {
+            throw new Exception('no time for fancy errors but: Email or Username is already in use');
+            die();
+        }
     }
 }

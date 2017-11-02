@@ -1,39 +1,27 @@
 <?php
 
+
 class QueryBuilder
 {
     protected $pdo;
 
+
+    /**
+     *  @param $pdo PDO
+     */
     public function __construct($pdo)
     {
+//gets connection from construct
         $this->pdo = $pdo;
     }
 
     public function selectAll($table)
     {
-        $statement = $this->pdo->prepare("select * from {$table}");
+        //this was in the tutorial i dont realy use it ofthen in the code but it works
+        $statement = $this->pdo->prepare("select * from {$table} WHERE userid = {$_SESSION['account']['id']}");
 
         $statement->execute();
 
-        return $statement->fetchAll(PDO::FETCH_CLASS);
-    }
-
-    public function insert($table, $parameters)
-    {
-        $sql = sprintf(
-            'insert into %s (%s) values (%s)',
-            $table,
-            implode(', ', array_keys($parameters)),
-            ':' . implode(', :', array_keys($parameters))
-        );
-        echo $sql; print_r($parameters); die();
-
-        try {
-            $statement = $this->pdo->prepare($sql);
-
-            $statement->execute($parameters);
-        } catch (Exception $e) {
-            //
-        }
+        return $statement->fetchAll();
     }
 }

@@ -17,6 +17,7 @@ class App
      * @param  mixed  $value
      */
     public static function bind($key, $value)
+        //binds key value in container registry
     {
         static::$registry[$key] = $value;
     }
@@ -27,6 +28,7 @@ class App
      * @param  string $key
      */
     public static function get($key)
+        //gets container by key
     {
         if (! array_key_exists($key, static::$registry)) {
             throw new Exception("No {$key} is bound in the container.");

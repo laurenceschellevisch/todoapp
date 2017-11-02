@@ -16,11 +16,11 @@
     <div class="card card-register mx-auto mt-5">
         <div class="card-header">Register an Account</div>
         <div class="card-body">
-            <form>
+            <form action="/registeraccount" method="post">
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-12">
-                            <label for="exampleInputName">First name</label>
+                            <label for="exampleInputName">User name</label>
                             <input required class="form-control" name="name" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Enter first name">
                         </div>
 
@@ -42,10 +42,10 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="/register/complete">Register</a>
+                <input type="submit" class="btn btn-primary btn-block" value="Register">
             </form>
             <div class="text-center">
-                <a class="d-block small mt-3" href="login.view.php">Login Page</a>
+                <a class="d-block small mt-3" href="/">Login Page</a>
                 <a class="d-block small" href="forgot-password.html">Forgot Password? doesnt work yet</a>
             </div>
         </div>

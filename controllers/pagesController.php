@@ -7,7 +7,7 @@
  */
 
 class pagesController extends Controller
-{
+{//pages to load
     public function index() {
         require 'views/index.view.php';
     }
@@ -18,6 +18,7 @@ class pagesController extends Controller
         require 'views/login/login.view.php';
     }
     public function home() {
+
         require 'views/home/home.view.php';
     }
 

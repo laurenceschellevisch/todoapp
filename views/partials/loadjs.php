@@ -13,3 +13,9 @@
 <script src="/public/template/bootstrap/js/bootstrap.min.js"></script>
 <!-- Core plugin JavaScript-->
 <script src="/public/template/jquery-easing/jquery.easing.min.js"></script>
+<script src="/public/template/datatables/jquery.dataTables.js"></script>
+
+<script src="/public/template/datatables/dataTables.bootstrap4.js"></script>
+<script src="/public/js/datatables.js"></script>
+<script src="/public/js/updatemodal.js"></script>
+

@@ -32,11 +32,11 @@
                 <input class="form-check-input" type="checkbox"> Remember Password</label>
             </div>
           </div>
-          <input type="submit" class="btn btn-primary btn-block" value="login">
+          <input type="submit" class="btn btn-primary btn-block" value="Login">
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="register.html">Register an Account</a>
-          <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+          <a class="d-block small mt-3" href="/register">Register an Account</a>
+          <a class="d-block small" href="forgot-password.html">Forgot Password? (WIP)</a>
         </div>
       </div>
     </div>
