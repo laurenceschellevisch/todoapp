@@ -32,7 +32,7 @@ class Router
 
     public function direct($uri, $requestType)
     {
-
+        $public = '../public/' . $uri;
         //this directs you to the correct uri. well it prepares you to go to the correct uri
         if ($this->routes[$requestType][$uri]) {
             //checks if it exists in array
@@ -40,6 +40,15 @@ class Router
                 //this is called the splat operator what it does is Key => value becomes callaction($key , $value) thats all it looks complicated but its simple
                 ...explode('@',$this->routes[$requestType][$uri])
             );
+        } else if (file_exists($public)) {
+            $fileType = explode('.', $public);
+            $mimeType = mime_content_type($public);
+            $mimeType = $fileType[count($fileType) - 1] == 'css' ? 'text/css' : $mimeType;
+            header("Content-type:$mimeType");
+            // Return an actual file.
+            echo (string) file_get_contents($public);
+            // Exit complete method.
+            return;
         }
     }
 
